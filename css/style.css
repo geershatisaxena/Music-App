@@ -8,6 +8,8 @@
     --background-color: #f0f2f5;
     --container-bg: #ffffff;
     --text-color: #2d3436;
+    --text-color-strong: #1a1a1a;
+    --title-gradient: linear-gradient(135deg, #6c5ce7, #4834d4);
     --secondary-text: #636e72;
     --border-color: #dfe6e9;
     --hover-color: #f1f2f6;
@@ -18,7 +20,67 @@
     --shadow-lg: 0 8px 16px rgba(108, 92, 231, 0.2);
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --gr.player-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--container-bg);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.player-progress span {
+    color: var(--secondary-text);
+    font-family: monospace;
+    font-size: 0.9rem;
+    min-width: 45px;
+}
+
+.progress-container {
+    flex: 1;
+    background: var(--hover-color);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 6px;
+    position: relative;
+    transition: var(--transition-fast);
+}
+
+.progress-container:hover {
+    height: 8px;
+}
+
+.progress-container:hover .progress-handle {
+    transform: scale(1);
+}
+
+.progress {
+    background: var(--gradient-primary);
+    border-radius: 10px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+    position: relative;
+}
+
+.progress-handle {
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translate(0, -50%) scale(0);
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 10px var(--primary-color);
+}near-gradient(135deg, var(--primary-color), var(--secondary-color));
     --gradient-accent: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
     
     /* Animation */
@@ -36,6 +98,18 @@
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
+}
+
+[data-theme="dark"] {
+    /* Dark Theme Colors */
+    --background-color: #1a1b1e;
+    --container-bg: #2d2e32;
+    --text-color: #f1f2f6;
+    --text-color-strong: #ffffff;
+    --title-gradient: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    --secondary-text: #a4b0be;
+    --border-color: #3d3e42;
+    --hover-color: #34353a;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 }
@@ -45,6 +119,8 @@
     --background-color: #1a1b1e;
     --container-bg: #2d2e32;
     --text-color: #f1f2f6;
+    --text-color-strong: #ffffff;
+    --title-gradient: linear-gradient(135deg, #a29bfe, #6c5ce7);
     --secondary-text: #a4b0be;
     --border-color: #3d3e42;
     --hover-color: #34353a;
@@ -103,10 +179,8 @@ body {
     gap: 0.8rem;
     font-size: 1.5rem;
     font-weight: var(--font-weight-semibold);
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-color-strong);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .controls {
@@ -170,17 +244,289 @@ body {
 .music-visualizer {
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 180px;
     margin: 1rem 0;
     border-radius: var(--border-radius-md);
     overflow: hidden;
     background: var(--gradient-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #visualizer {
+    position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.8;
+    z-index: 1;
+}
+
+.dance-floor {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    height: 120px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.dancing-character {
+    transform-origin: bottom;
+    filter: drop-shadow(0 0 10px currentColor);
+}
+
+.character {
+    width: 40px;
+    height: 80px;
+    position: relative;
+}
+
+/* Character 1 - Purple Dancer (Hip Hop) */
+.character-1 {
+    color: #a29bfe;
+}
+
+.character-1 .character {
+    animation: hipHopDance 1s ease-in-out infinite;
+}
+
+/* Character 2 - Green Dancer (Ballet) */
+.character-2 {
+    color: #00b894;
+}
+
+.character-2 .character {
+    animation: balletDance 1.5s ease-in-out infinite;
+}
+
+/* Character 3 - Pink Dancer (Breakdance) */
+.character-3 {
+    color: #ff7675;
+}
+
+.character-3 .character {
+    animation: breakDance 2s ease-in-out infinite;
+}
+
+/* Character 4 - Yellow Dancer (Pop) */
+.character-4 {
+    color: #ffeaa7;
+}
+
+.character-4 .character {
+    animation: popDance 1.2s ease-in-out infinite;
+}
+
+.character .head {
+    width: 20px;
+    height: 20px;
+    background: currentColor;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.character .body {
+    width: 8px;
+    height: 30px;
+    background: currentColor;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.character .arm {
+    width: 6px;
+    height: 20px;
+    background: currentColor;
+    position: absolute;
+    top: 22px;
+    transform-origin: top;
+}
+
+.character .leg {
+    width: 6px;
+    height: 25px;
+    background: currentColor;
+    position: absolute;
+    top: 48px;
+    transform-origin: top;
+}
+
+.character .arm.left { left: 10px; }
+.character .arm.right { right: 10px; }
+.character .leg.left { left: 14px; }
+.character .leg.right { right: 14px; }
+
+/* Hip Hop Dance Moves */
+@keyframes hipHopDance {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-15px) rotate(-5deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    75% { transform: translateY(-15px) rotate(5deg); }
+}
+
+/* Ballet Dance Moves */
+@keyframes balletDance {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(0.95) rotate(10deg); }
+}
+
+/* Breakdance Moves */
+@keyframes breakDance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg) translateY(-10px); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg) translateY(10px); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Pop Dance Moves */
+@keyframes popDance {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1) rotate(-5deg); }
+    50% { transform: scale(1) rotate(0deg); }
+    75% { transform: scale(1.1) rotate(5deg); }
+}
+
+/* Character Part Animations */
+.character-1 .arm.left { animation: hipHopArm 1s ease-in-out infinite; }
+.character-1 .arm.right { animation: hipHopArm 1s ease-in-out infinite reverse; }
+.character-1 .leg.left { animation: hipHopLeg 1s ease-in-out infinite; }
+.character-1 .leg.right { animation: hipHopLeg 1s ease-in-out infinite reverse; }
+
+.character-2 .arm.left { animation: balletArm 1.5s ease-in-out infinite; }
+.character-2 .arm.right { animation: balletArm 1.5s ease-in-out infinite reverse; }
+.character-2 .leg.left { animation: balletLeg 1.5s ease-in-out infinite; }
+.character-2 .leg.right { animation: balletLeg 1.5s ease-in-out infinite reverse; }
+
+.character-3 .arm.left { animation: breakArm 2s ease-in-out infinite; }
+.character-3 .arm.right { animation: breakArm 2s ease-in-out infinite reverse; }
+.character-3 .leg.left { animation: breakLeg 2s ease-in-out infinite; }
+.character-3 .leg.right { animation: breakLeg 2s ease-in-out infinite reverse; }
+
+.character-4 .arm.left { animation: popArm 1.2s ease-in-out infinite; }
+.character-4 .arm.right { animation: popArm 1.2s ease-in-out infinite reverse; }
+.character-4 .leg.left { animation: popLeg 1.2s ease-in-out infinite; }
+.character-4 .leg.right { animation: popLeg 1.2s ease-in-out infinite reverse; }
+
+@keyframes hipHopArm {
+    0%, 100% { transform: rotate(-20deg); }
+    50% { transform: rotate(40deg); }
+}
+
+@keyframes hipHopLeg {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes balletArm {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+}
+
+@keyframes balletLeg {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(45deg); }
+}
+
+@keyframes breakArm {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes breakLeg {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-45deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes popArm {
+    0%, 100% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+}
+
+@keyframes popLeg {
+    0%, 100% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+}
+
+.amplitude-bars {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.amplitude-bars .bar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius-sm);
+    transform-origin: bottom;
+}
+
+@keyframes headBop {
+    0%, 100% { transform: translateX(-50%) rotate(0deg); }
+    50% { transform: translateX(-50%) rotate(5deg); }
+}
+
+@keyframes bodyMove {
+    0%, 100% { transform: translateX(-50%) scaleY(1); }
+    50% { transform: translateX(-50%) scaleY(0.95); }
+}
+
+@keyframes leftArmMove {
+    0%, 100% { transform: rotate(-20deg); }
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes rightArmMove {
+    0%, 100% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+}
+
+@keyframes leftLegMove {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(15deg); }
+}
+
+@keyframes rightLegMove {
+    0%, 100% { transform: rotate(5deg); }
+    50% { transform: rotate(-15deg); }
+}
+
+.music-container.play .dancing-character {
+    animation: bounce 0.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Add pulse animation for playing state */
+.music-container.play .amplitude-bars .bar {
+    animation: amplitude var(--bar-duration, 0.5s) ease-in-out infinite;
+    animation-delay: var(--bar-delay, 0s);
+}
+
+@keyframes amplitude {
+    0%, 100% { transform: scaleY(0.3); }
+    50% { transform: scaleY(1); }
 }
 
 .img-container {
@@ -471,14 +817,19 @@ body {
 }
 
 .song-tile .song-title {
-    color: var(--text-color);
     font-size: 0.9rem;
     font-weight: 600;
     margin: 5px 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    color: var(--text-color-strong);
+    background: var(--title-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .song-tile .song-artist {

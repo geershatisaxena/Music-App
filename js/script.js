@@ -30,65 +30,104 @@ themeToggle.addEventListener('click', () => {
 // Songs data
 const songs = [
     {
-        title: "Barsaat Ho Jaaye",
-        artist: "Jubin Nautiyal",
+        title: "बरसात हो जाए",
+        artist: "जुबिन नौटियाल",
         src: "assets/songs/128-Barsaat Ho Jaaye - Jubin Nautiyal 128 Kbps.mp3",
         cover: "assets/images/download.jfif"
     },
     {
-        title: "Hum Katha Sunate Ram Sakal Gun Dham Ki",
-        artist: "Ramayana",
+        title:"तेरी ओर",
+        artist:"श्रेया घोषाल, राहत फ़तेह अली खान",
+        src:"assets/songs/Teri Ore.mp3",
+        cover:"assets/images/teri ore.jfif"
+    },
+    {
+        title: "हम कथा सुनाते राम सकल गुण धाम की",
+        artist: "कविता कृष्णमूर्ति, हेमलता, रविन्द्र जैन",
         src: "assets/songs/Hum Katha Sunate Ram Sakal Gun Dham Ki- [PagalWorld.NL].mp3",
         cover: "assets/images/download (1).jfif"
     },
     {
-        title: "High Rated Gabru",
-        artist: "Guru Randhawa",
+        title:"मस्त नज़रो से अल्लाह बचाये",
+        artist:"जुबिन नौटियाल",
+        src:"assets/songs/Mast Nazro Se Allah Bachaye.mp3",
+        cover:"assets/images/mast nazro se.jfif"
+    },
+    {
+        title:"तुझे भूलना तो चाहा",
+        artist:"जुबिन नौटियाल",
+        src:"assets/songs/Tujhe bhoolna.mp3",
+        cover:"assets/images/tujhe bhoolna.jfif"
+    },
+    {
+        title:"केसरिया",
+        artist:"अरिजीत सिंह",
+        src:"assets/songs/Kesariya.mp3",
+        cover:"assets/images/kesariya.jfif"
+    },
+    {
+        title:"माई दिल गोज़ म्म्म",
+        artist:"शान, गायत्री अय्यर",
+        src:"assets/songs/My Dil Goes Mmmm - Shaan and Gayatri Iyer.mp3",
+        cover:"assets/images/dil goes hmmm.jfif"
+    },
+    {
+        title: "हाई रेटेड गबरू",
+        artist: "गुरु रंधावा",
         src: "assets/songs/High_Rated_Gabru_1.mp3",
         cover: "assets/images/High rated gabru.jfif"
     },
     {
-        title: "Teri Galiyon Se Uthega Janaza Jab Mera",
-        artist: "Jubin Nautiyal",
-        src: "assets/songs/Teri Galiyon Se Uthega Janaza Jab Mera(PagalWorld.com.se).mp3",
-        cover: "assets/images/teri galiyo se.jfif"
+        title: "तोह आगये हम",
+        artist: "मिथून, जुबिन नौटियाल",
+        src: "assets/songs/Toh aagye hm.mp3",
+        cover: "assets/images/to aagye.jfif"
     },
     {
-        title: "Aasman Rootha from Panchayat 3",
-        artist: "Swanand Kirkire",
+        title: "आसमां रूठा पंचायत 3",
+        artist: "स्वानंद किरकिरे",
         src: "assets/songs/Aasman Rootha Panchayat Season 3 128 Kbps.mp3",
         cover: "assets/images/aasma rootha.jfif"
     },
+   {
+     title:"मेरे घर राम आए हैं",
+        artist:"जुबिन नौटियाल, पायल देव",
+        src:"assets/songs/Mere Ghar Ram Aaye Hain Jubin Nautiyal 128 Kbps.mp3",
+        cover:"assets/images/mere ghar ram aye hain.jfif"
+   },
     {
-        title: "Sayiyaara Title Track",
-        artist: "Geershati Saxena",
-        src: "assets/songs/Saiyaara.unknown",
-        cover: "assets/images/picture.jpg"
-    },
-    {
-        title: "Pehli Baarish Mein",
-        artist: "Geershati Saxena",
-        src: "assets/songs/Pehli Barish Mein.unknown",
-        cover: "assets/images/picture.jpg"
-    },
-    {
-        title: "Bulleya",
-        artist: "Geershati Saxena",
-        src: "assets/songs/Bulleya.unknown",
-        cover: "assets/images/picture.jpg"
-    },
-    {
-        title:"Dhun",
-        artist:"Krish Kapoor Phati Awaz Wale",
+        title:"धुन",
+        artist:"मिथून, अरिजीत सिंह ",
         src:"assets/songs/Dhun Saiyaara 128 Kbps.mp3",
         cover:"assets/images/Dhun.jfif"
     },
      {
-        title:"O ri Chiraiya",
-        artist:"Swanand Kirkire",
+        title:"ओ री चिरैया",
+        artist:"स्वानंद किरकिरे",
         src:"assets/songs/O_Ri_Chiraiya-(DownloadNe.in).mp3",
         cover:"assets/images/kirkire.jfif"
+    },
+     {
+        title:"कागज के दो पंख ले के उड़ चलूँ (मोंटा रे)",
+        artist:"अमित त्रिवेदी, स्वानंद किरकिरे",
+        src:"assets/songs/Monta Re - Lootera 320 Kbps.mp3",
+        cover:"assets/images/montare.jfif"
+    },
+    {
+        title:"तुम ही आना",
+        artist:"जुबिन नौटियाल",
+        src:"assets/songs/Tum Hi Aana - Marjaavaan.mp3",
+        cover:"assets/images/tum hi ana.jfif"
+    },
+    {
+        title:"जीने लगा हूँ",
+        artist:"सचिन-जिगर, श्रेया घोषाल, आतिफ असलम",
+        src:"assets/songs/Jeene Laga hoo.mp3",
+        cover:"assets/images/jeene laga.jfif"
     }
+
+
+
 
 
 ];
@@ -233,6 +272,12 @@ function updateProgress(e) {
         durationEl.textContent = formattedDuration;
         durationLarge.textContent = formattedDuration;
     }
+
+    // Update progress handle position
+    const progressHandle = document.querySelector('.progress-handle');
+    if (progressHandle) {
+        progressHandle.style.left = `${progressPercent}%`;
+    }
 }
 
 function setProgress(e) {
@@ -355,6 +400,16 @@ function setupVisualizer() {
     visualizer.width = visualizer.offsetWidth;
     visualizer.height = visualizer.offsetHeight;
     
+    // Get amplitude bars
+    const amplitudeBars = document.querySelectorAll('.amplitude-bars .bar');
+    const characterHead = document.querySelector('.character .head');
+    
+    // Set different animation delays for amplitude bars
+    amplitudeBars.forEach((bar, index) => {
+        bar.style.setProperty('--bar-delay', `${index * 0.1}s`);
+        bar.style.setProperty('--bar-duration', `${0.5 + index * 0.1}s`);
+    });
+    
     function drawVisualizer() {
         requestAnimationFrame(drawVisualizer);
         
@@ -367,18 +422,54 @@ function setupVisualizer() {
         let barHeight;
         let x = 0;
         
+        // Calculate average amplitude for character animations
+        let totalAmplitude = 0;
+        
         for (let i = 0; i < bufferLength; i++) {
             barHeight = dataArray[i] / 2;
+            totalAmplitude += dataArray[i];
             
             const gradient = visualizerCtx.createLinearGradient(0, 0, 0, visualizer.height);
-            gradient.addColorStop(0, '#c4f70bff');
-            gradient.addColorStop(1, '#0df6f2ff');
+            gradient.addColorStop(0, '#12e303ff');
+            gradient.addColorStop(1, '#fd00b1ff');
             
             visualizerCtx.fillStyle = gradient;
             visualizerCtx.fillRect(x, visualizer.height - barHeight, barWidth, barHeight);
             
             x += barWidth + 1;
         }
+        
+        // Adjust character animations based on amplitude
+        const averageAmplitude = totalAmplitude / bufferLength;
+        const normalizedAmplitude = averageAmplitude / 255;
+        const characters = document.querySelectorAll('.dancing-character');
+        
+        characters.forEach((character, index) => {
+            const scale = 1 + normalizedAmplitude * 0.1;
+            const delay = index * 0.1;
+            
+            if (normalizedAmplitude > 0.3) {
+                switch(index) {
+                    case 0: // Hip Hop dancer
+                        character.style.transform = `scale(${scale}) translateY(${-normalizedAmplitude * 20}px)`;
+                        break;
+                    case 1: // Ballet dancer
+                        character.style.transform = `scale(${scale}) rotate(${normalizedAmplitude * 10}deg)`;
+                        break;
+                    case 2: // Breakdance dancer
+                        character.style.transform = `scale(${scale}) rotate(${normalizedAmplitude * 360}deg)`;
+                        break;
+                    case 3: // Pop dancer
+                        character.style.transform = `scale(${scale * 1.1}) translateX(${Math.sin(Date.now() * 0.01) * 20}px)`;
+                        break;
+                }
+            } else {
+                character.style.transform = 'scale(1)';
+            }
+            
+            // Add glow effect based on music intensity
+            character.style.filter = `drop-shadow(0 0 ${5 + normalizedAmplitude * 15}px currentColor)`;
+        });
     }
     
     drawVisualizer();
@@ -490,7 +581,7 @@ audio.addEventListener('ended', () => {
 // Initialize
 loadSong(songs[currentSongIndex]);
 populatePlaylist();
-showToast('Welcome to Harmony Hub! 🎵');
+showToast('Welcome to Melodia 🎵');
 
 // Handle keyboard shortcuts
 document.addEventListener('keydown', (e) => {
