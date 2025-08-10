@@ -2,7 +2,7 @@
 
 A modern, responsive web-based music player application with a beautiful UI, audio visualization, and interactive features.
 
-![Melodia Music Player](screenshot.png)
+![Melodia Music Player]
 
 ## Features
 
