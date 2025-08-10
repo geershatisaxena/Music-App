@@ -2,7 +2,6 @@
 
 A modern, responsive web-based music player application with a beautiful UI, audio visualization, and interactive features.
 
-![Melodia Music Player]
 
 ## Features
 
@@ -23,8 +22,9 @@ A modern, responsive web-based music player application with a beautiful UI, aud
 
 ## Tech Stack
 
-- HTML5
-- CSS3 (with CSS Variables and Animations)
-- JavaScript (ES6+)
-- Web Audio API
-- Canvas API
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript ES6+](https://img.shields.io/badge/-JavaScript%20(ES6%2B)-F7DF1E?logo=javascript&logoColor=black)
+![Web Audio API](https://img.shields.io/badge/-Web%20Audio%20API-FF6F00?logo=google-chrome&logoColor=white)
+![Canvas API](https://img.shields.io/badge/-Canvas%20API-2C3E50?logo=html5&logoColor=white)
+
