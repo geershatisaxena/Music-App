@@ -101,13 +101,25 @@ const songs = [
         src:"assets/songs/Dhun Saiyaara 128 Kbps.mp3",
         cover:"assets/images/Dhun.jfif"
     },
-     {
+    {
         title:"ओ री चिरैया",
         artist:"स्वानंद किरकिरे",
         src:"assets/songs/O_Ri_Chiraiya-(DownloadNe.in).mp3",
         cover:"assets/images/kirkire.jfif"
     },
-     {
+    {
+        title:"फिर मोहब्बत",
+        artist:"मिथून, मोहम्मद इरफ़ान, अरिजीत सिंह, सैम भट",
+        src:"assets/songs/Phir Mohabbat Murder 2-(Mr-Jat.in).mp3",
+        cover:"assets/images/phir mohhabat.jfif"
+    },
+    {
+        title:"रातां लम्बियां",
+        artist:"जुबिन नौटियाल, असीस कौर",
+        src:"assets/songs/Raatan Lmbiya.mp3",
+        cover:"assets/images/raata lambiya.jfif"
+    },
+    {
         title:"कागज के दो पंख ले के उड़ चलूँ (मोंटा रे)",
         artist:"अमित त्रिवेदी, स्वानंद किरकिरे",
         src:"assets/songs/Monta Re - Lootera 320 Kbps.mp3",
@@ -124,12 +136,19 @@ const songs = [
         artist:"सचिन-जिगर, श्रेया घोषाल, आतिफ असलम",
         src:"assets/songs/Jeene Laga hoo.mp3",
         cover:"assets/images/jeene laga.jfif"
+    },
+    {
+        title:"मेरी जिंदगी है तू",
+        artist:"जुबिन नौटियाल, नीति मोहन",
+        src:"assets/songs/Meri Zindagi.mp3",
+        cover:"assets/images/meri zindagi.jfif"
+    },
+    {
+        title:"सामी सामी",
+        artist:"सुनिधि चौहान",
+        src:"assets/songs/Saami Saami(PagalWorld.com.se).mp3",
+        cover:"assets/images/saami.jfif"
     }
-
-
-
-
-
 ];
 
 // DOM Elements
