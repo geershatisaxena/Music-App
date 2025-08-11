@@ -132,6 +132,12 @@ const songs = [
         cover:"assets/images/tum hi ana.jfif"
     },
     {
+        title:"दास्तान-ए-ओम शांति ओम ",
+        artist:"शान",
+        src:"assets/songs/Dastaan E Om Shanti Om Shaan 128 Kbps.mp3",
+        cover:"assets/images/deom.jfif"
+    },
+    {
         title:"जीने लगा हूँ",
         artist:"सचिन-जिगर, श्रेया घोषाल, आतिफ असलम",
         src:"assets/songs/Jeene Laga hoo.mp3",
@@ -142,6 +148,12 @@ const songs = [
         artist:"जुबिन नौटियाल, नीति मोहन",
         src:"assets/songs/Meri Zindagi.mp3",
         cover:"assets/images/meri zindagi.jfif"
+    },
+     {
+        title:"दीवानगी दीवानगी",
+        artist:"राहुल सक्सैना, शान, श्रेया घोषाल, सुनिधि चौहान, उदित नारायण",
+        src:"assets/songs/Deewangi Deewangi Om Shanti Om 128 Kbps.mp3",
+        cover:"assets/images/osho.jfif"
     },
     {
         title:"सामी सामी",
