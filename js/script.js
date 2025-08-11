@@ -430,8 +430,8 @@ function setupVisualizer() {
             totalAmplitude += dataArray[i];
             
             const gradient = visualizerCtx.createLinearGradient(0, 0, 0, visualizer.height);
-            gradient.addColorStop(0, '#12e303ff');
-            gradient.addColorStop(1, '#fd00b1ff');
+            gradient.addColorStop(0, '#b6e303ff');
+            gradient.addColorStop(1, '#b5cd00ff');
             
             visualizerCtx.fillStyle = gradient;
             visualizerCtx.fillRect(x, visualizer.height - barHeight, barWidth, barHeight);
