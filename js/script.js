@@ -149,17 +149,47 @@ const songs = [
         src:"assets/songs/Meri Zindagi.mp3",
         cover:"assets/images/meri zindagi.jfif"
     },
-     {
+    {
+        title:"तेरी आंखों",
+        artist:"गीर्षति सक्सेना",
+        src:"assets/songs/Teri Aankho.mp3",
+        cover:"assets/images/WhatsApp Image 2024-01-06 at 15.58.26_8a6949a6.jpg"
+    },
+    {
         title:"दीवानगी दीवानगी",
         artist:"राहुल सक्सैना, शान, श्रेया घोषाल, सुनिधि चौहान, उदित नारायण",
         src:"assets/songs/Deewangi Deewangi Om Shanti Om 128 Kbps.mp3",
         cover:"assets/images/osho.jfif"
     },
     {
+        title:"कैसा ये इस्क है, अजब सा रिस्क है",
+        artist:"राहत फतेह अली खान ",
+        src:"assets/songs/Isq Risk-(Mr-Jat.in).mp3",
+        cover:"assets/images/ishq risk.jfif"
+    },
+    {
+        title:"तुम्हारे बिना",
+        artist:"कुमार विश्वास , गीर्षति सक्सेना",
+        src:"assets/songs/Tumhare Bina.mp3",
+        cover:"assets/images/kv.jfif"
+    },
+    {
+        title:"तुम्हारे बिना 2",
+        artist:"कुमार विश्वास , गीर्षति सक्सेना",
+        src:"assets/songs/Tumahre Bina 2.mp3",
+        cover:"assets/images/kv.jfif"
+    },
+    {
         title:"सामी सामी",
         artist:"सुनिधि चौहान",
         src:"assets/songs/Saami Saami(PagalWorld.com.se).mp3",
         cover:"assets/images/saami.jfif"
+    },
+    {
+        title:"तेरी आंखों - 2",
+        artist:"गीर्षति सक्सेना",
+        src:"assets/songs/Teri Ankho 2.mp3",
+        cover:"assets/images/WhatsApp Image 2024-01-06 at 15.58.26_8a6949a6.jpg"
     }
 ];
 
