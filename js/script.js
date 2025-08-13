@@ -31,7 +31,20 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Songs data
-const songs = [    {
+const songs = [   
+    {
+        title:"हम कथा सुनाते राम सकल गुण धाम की",
+        artist:"कविता कृष्णमूर्ति, हेमलता, रविन्द्र जैन ",
+        src:"assets/songs/Hum Katha Sunate Ram Sakal Gun Dham Ki- [PagalWorld.NL].mp3",
+        cover:"assets/images/download (1).jfif"
+    },
+    {
+        title:"तुम्हारे बिना ",
+        artist:"कुमार विश्वास , गीर्षति सक्सेना",
+        src:"assets/songs/ज़िन्दगी से लड़ा हूँ तुम्हारे बिना, हाशि.mp3",
+        cover:"assets/images/kv.jfif"
+    }, 
+    {
         title: "बरसात हो जाए",
         artist: "जुबिन नौटियाल",
         src: "assets/songs/128-Barsaat Ho Jaaye - Jubin Nautiyal 128 Kbps.mp3",
@@ -150,7 +163,7 @@ const songs = [    {
         title:"तेरी आंखों",
         artist:"गीर्षति सक्सेना",
         src:"assets/songs/Teri Aankho.mp3",
-        cover:"assets/images/WhatsApp Image 2024-01-06 at 15.58.26_8a6949a6.jpg"
+        cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
     },
     {
         title:"दीवानगी दीवानगी",
@@ -165,13 +178,13 @@ const songs = [    {
         cover:"assets/images/ishq risk.jfif"
     },
     {
-        title:"तुम्हारे बिना",
+        title:"तुम्हारे बिना 2",
         artist:"कुमार विश्वास , गीर्षति सक्सेना",
         src:"assets/songs/Tumhare Bina.mp3",
         cover:"assets/images/kv.jfif"
     },
     {
-        title:"तुम्हारे बिना 2",
+        title:"तुम्हारे बिना 3",
         artist:"कुमार विश्वास , गीर्षति सक्सेना",
         src:"assets/songs/Tumahre Bina 2.mp3",
         cover:"assets/images/kv.jfif"
@@ -186,7 +199,7 @@ const songs = [    {
         title:"तेरी आंखों - 2",
         artist:"गीर्षति सक्सेना",
         src:"assets/songs/Teri Ankho 2.mp3",
-        cover:"assets/images/WhatsApp Image 2024-01-06 at 15.58.26_8a6949a6.jpg"
+        cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
     }
 ];
 
@@ -639,7 +652,7 @@ audio.addEventListener('ended', () => {
 // Initialize
 loadSong(songs[currentSongIndex]);
 populatePlaylist();
-showToast('Welcome to Melodia 🎵');
+showToast('Welcome to GeerVibes 🎵');
 
 // Handle keyboard shortcuts
 document.addEventListener('keydown', (e) => {
