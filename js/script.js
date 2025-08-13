@@ -1,3 +1,6 @@
+// Check authentication first
+checkAuth();
+
 // Advanced Audio Context Setup
 let audioContext;
 let analyser;
@@ -28,8 +31,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Songs data
-const songs = [
-    {
+const songs = [    {
         title: "बरसात हो जाए",
         artist: "जुबिन नौटियाल",
         src: "assets/songs/128-Barsaat Ho Jaaye - Jubin Nautiyal 128 Kbps.mp3",
@@ -41,12 +43,7 @@ const songs = [
         src:"assets/songs/Teri Ore.mp3",
         cover:"assets/images/teri ore.jfif"
     },
-    {
-        title: "हम कथा सुनाते राम सकल गुण धाम की",
-        artist: "कविता कृष्णमूर्ति, हेमलता, रविन्द्र जैन",
-        src: "assets/songs/Hum Katha Sunate Ram Sakal Gun Dham Ki- [PagalWorld.NL].mp3",
-        cover: "assets/images/download (1).jfif"
-    },
+  
     {
         title:"मस्त नज़रो से अल्लाह बचाये",
         artist:"जुबिन नौटियाल",
