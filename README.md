@@ -1,4 +1,4 @@
-# Melodia - Modern Music Player
+# GeerVibes - Modern Music Player
 
 A modern, responsive web-based music player application with a beautiful UI, audio visualization, and interactive features.
 
