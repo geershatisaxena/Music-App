@@ -39,6 +39,13 @@ const songs = [
         cover:"assets/images/download (1).jfif"
     },
     {
+        title:"गजानना गजानना गजानना गनराया",
+        artist:"सुखविंदर सिंह",
+        src:"assets/songs/Gajanana - Bajirao Mastani 128 Kbps.mp3",
+        cover:"assets/images/ganeshji.jfif"
+    },
+   
+    {
         title:"तुम्हारे बिना ",
         artist:"कुमार विश्वास , गीर्षति सक्सेना",
         src:"assets/songs/ज़िन्दगी से लड़ा हूँ तुम्हारे बिना, हाशि.mp3",
@@ -49,6 +56,12 @@ const songs = [
         artist: "जुबिन नौटियाल",
         src: "assets/songs/128-Barsaat Ho Jaaye - Jubin Nautiyal 128 Kbps.mp3",
         cover: "assets/images/download.jfif"
+    },
+     {
+        title:"देवा श्री गणेशा",
+        artist:"अजय - अतुल,अजय गोगावले",
+        src:"assets/songs/Deva Shree Ganesha Agneepath 128 Kbps.mp3",
+        cover:"assets/images/ganeshji.jfif"
     },
     {
         title:"तेरी ओर",
@@ -92,6 +105,12 @@ const songs = [
         artist: "मिथून, जुबिन नौटियाल",
         src: "assets/songs/Toh aagye hm.mp3",
         cover: "assets/images/to aagye.jfif"
+    },
+     {
+        title: "बस इतना सा ख्वाब है",
+        artist: "अभिजीत भट्टाचार्य",
+        src: "assets/songs/Chaand Taare Yes Boss 128 Kbps.mp3",
+        cover: "assets/images/ct.jfif"
     },
     {
         title: "आसमां रूठा पंचायत 3",
