@@ -123,6 +123,12 @@ const songs = [
         cover: "assets/images/High rated gabru.jfif"
     },
     {
+        title: "Aye Khuda",
+        artist: "Mithoon, Kshitij Tarey",
+        src: "assets/songs/Aye Khuda - Murder 2 128 Kbps.mp3",
+        cover: "assets/images/mithoon.jfif"
+    },
+    {
         title: "Toh Aagye Hum",
         artist: "Mithoon, Jubin Nautiyal",
         src: "assets/songs/Toh aagye hm.mp3",
