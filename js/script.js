@@ -101,8 +101,8 @@ const songs = [
     {
        title:"Aaya Re Toofaan",
        artist:"A.R. Rahman, Vaishali Samant",
-       src:"assets/images/toofaan.jfif",
-       cover:"assets/images/toofaan.jfif"
+       src:"assets/songs/Aaya Re Toofan Chhaava 128 Kbps.mp3",
+      cover:"assets/images/toofaan.jfif"
     },
     {
         title:"Kesariya",
