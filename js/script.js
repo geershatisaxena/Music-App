@@ -33,190 +33,212 @@ themeToggle.addEventListener('click', () => {
 // Songs data
 const songs = [   
     {
-        title:"हम कथा सुनाते राम सकल गुण धाम की",
-        artist:"कविता कृष्णमूर्ति, हेमलता, रविन्द्र जैन ",
+        title:"Vande Maatrabhoomi",
+        artist:"Geershati Saxena",
+        src:"assets/songs/Vande Maaatrabhoomi.mp3",
+        cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
+    },
+    {
+        title:"Hum Katha Sunate Ram Sakal Gun Dham Ki",
+        artist:"Kavita Krishnamoorti, Hemlata, Ravindra Jain",
         src:"assets/songs/Hum Katha Sunate Ram Sakal Gun Dham Ki- [PagalWorld.NL].mp3",
         cover:"assets/images/download (1).jfif"
     },
     {
-        title:"गजानना गजानना गजानना गनराया",
-        artist:"सुखविंदर सिंह",
+        title:"Gajanana Gajanana Gajanana Ganaraya",
+        artist:"Sukhwinder Singh",
         src:"assets/songs/Gajanana - Bajirao Mastani 128 Kbps.mp3",
         cover:"assets/images/ganeshji.jfif"
     },
-   
+   {
+        title:"Vande Maatrabhoomi 2",
+        artist:"Geershati Saxena",
+        src:"assets/songs/Vande Maatrabhoomi 2.mp3",
+        cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
+    },
     {
-        title:"तुम्हारे बिना ",
-        artist:"कुमार विश्वास , गीर्षति सक्सेना",
+        title:"Tumhare Bina",
+        artist:"Kumar Vishwas, Geershati Saxena",
         src:"assets/songs/ज़िन्दगी से लड़ा हूँ तुम्हारे बिना, हाशि.mp3",
         cover:"assets/images/kv.jfif"
     }, 
     {
-        title: "बरसात हो जाए",
-        artist: "जुबिन नौटियाल",
+        title: "Barsaat Ho Jaaye",
+        artist: "Jubin Nautiyal",
         src: "assets/songs/128-Barsaat Ho Jaaye - Jubin Nautiyal 128 Kbps.mp3",
         cover: "assets/images/download.jfif"
     },
      {
-        title:"देवा श्री गणेशा",
-        artist:"अजय - अतुल,अजय गोगावले",
+        title:"Deva Shree Ganesha",
+        artist:"Ajay - Atul, Ajay Gogavale",
         src:"assets/songs/Deva Shree Ganesha Agneepath 128 Kbps.mp3",
         cover:"assets/images/ganeshji.jfif"
     },
     {
-        title:"तेरी ओर",
-        artist:"श्रेया घोषाल, राहत फ़तेह अली खान",
+        title:"Teri Ore",
+        artist:"Shreya Ghoshal, Rahat Fateh Ali Khan",
         src:"assets/songs/Teri Ore.mp3",
         cover:"assets/images/teri ore.jfif"
     },
-  
+   {
+        title:"Chaand Sifarish",
+        artist:"Shaan, Kailash Kher",
+        src:"assets/songs/Chand Sifarish Fanaa 128 Kbps.mp3",
+        cover:"assets/images/chand sifarish.jfif"
+    },
     {
-        title:"मस्त नज़रो से अल्लाह बचाये",
-        artist:"जुबिन नौटियाल",
+        title:"Mast Nazro Se Allah Bachaye",
+        artist:"Jubin Nautiyal",
         src:"assets/songs/Mast Nazro Se Allah Bachaye.mp3",
         cover:"assets/images/mast nazro se.jfif"
     },
     {
-        title:"तुझे भूलना तो चाहा",
-        artist:"जुबिन नौटियाल",
+        title:"Tujhe Bhoolna",
+        artist:"Jubin Nautiyal",
         src:"assets/songs/Tujhe bhoolna.mp3",
         cover:"assets/images/tujhe bhoolna.jfif"
     },
     {
-        title:"केसरिया",
-        artist:"अरिजीत सिंह",
+       title:"Aaya Re Toofaan",
+       artist:"A.R. Rahman, Vaishali Samant",
+       src:"assets/images/toofaan.jfif",
+       cover:"assets/images/toofaan.jfif"
+    },
+    {
+        title:"Kesariya",
+        artist:"Arijit Singh",
         src:"assets/songs/Kesariya.mp3",
         cover:"assets/images/kesariya.jfif"
     },
     {
-        title:"माई दिल गोज़ म्म्म",
-        artist:"शान, गायत्री अय्यर",
+        title:"My Dil Goes Mmmm",
+        artist:"Shaan, Gayatri Iyer",
         src:"assets/songs/My Dil Goes Mmmm - Shaan and Gayatri Iyer.mp3",
         cover:"assets/images/dil goes hmmm.jfif"
     },
     {
-        title: "हाई रेटेड गबरू",
-        artist: "गुरु रंधावा",
+        title: "High Rated Gabru",
+        artist: "Guru Randhawa",
         src: "assets/songs/High_Rated_Gabru_1.mp3",
         cover: "assets/images/High rated gabru.jfif"
     },
     {
-        title: "तोह आगये हम",
-        artist: "मिथून, जुबिन नौटियाल",
+        title: "Toh Aagye Hum",
+        artist: "Mithoon, Jubin Nautiyal",
         src: "assets/songs/Toh aagye hm.mp3",
         cover: "assets/images/to aagye.jfif"
     },
      {
-        title: "बस इतना सा ख्वाब है",
-        artist: "अभिजीत भट्टाचार्य",
+        title: "Bas Itna Sa Khwab Hai",
+        artist: "Abhijeet Bhattacharya",
         src: "assets/songs/Chaand Taare Yes Boss 128 Kbps.mp3",
         cover: "assets/images/ct.jfif"
     },
     {
-        title: "आसमां रूठा पंचायत 3",
-        artist: "स्वानंद किरकिरे",
+        title: "Aasman Rootha Panchayat Season 3",
+        artist: "Swanand Kirkire",
         src: "assets/songs/Aasman Rootha Panchayat Season 3 128 Kbps.mp3",
         cover: "assets/images/aasma rootha.jfif"
     },
    {
-     title:"मेरे घर राम आए हैं",
-        artist:"जुबिन नौटियाल, पायल देव",
+     title:"Mere Ghar Ram Aaye Hain",
+        artist:"Jubin Nautiyal, Payal Dev",
         src:"assets/songs/Mere Ghar Ram Aaye Hain Jubin Nautiyal 128 Kbps.mp3",
         cover:"assets/images/mere ghar ram aye hain.jfif"
    },
     {
-        title:"धुन",
-        artist:"मिथून, अरिजीत सिंह ",
+        title:"Dhun",
+        artist:"Mithoon, Arijit Singh",
         src:"assets/songs/Dhun Saiyaara 128 Kbps.mp3",
         cover:"assets/images/Dhun.jfif"
     },
     {
-        title:"ओ री चिरैया",
-        artist:"स्वानंद किरकिरे",
+        title:"O Ri Chiraiya",
+        artist:"Swanand Kirkire",
         src:"assets/songs/O_Ri_Chiraiya-(DownloadNe.in).mp3",
         cover:"assets/images/kirkire.jfif"
     },
     {
-        title:"फिर मोहब्बत",
-        artist:"मिथून, मोहम्मद इरफ़ान, अरिजीत सिंह, सैम भट",
+        title:"Phir Mohabbat",
+        artist:"Mithoon, Mohammad Irfan, Arijit Singh, Saim Bhatt",
         src:"assets/songs/Phir Mohabbat Murder 2-(Mr-Jat.in).mp3",
         cover:"assets/images/phir mohhabat.jfif"
     },
     {
-        title:"रातां लम्बियां",
-        artist:"जुबिन नौटियाल, असीस कौर",
+        title:"Raatan Lambiya",
+        artist:"Jubin Nautiyal, Asees Kaur",
         src:"assets/songs/Raatan Lmbiya.mp3",
         cover:"assets/images/raata lambiya.jfif"
     },
     {
-        title:"कागज के दो पंख ले के उड़ चलूँ (मोंटा रे)",
-        artist:"अमित त्रिवेदी, स्वानंद किरकिरे",
+        title:"Kaagaz ke 2 pankh leke",
+        artist:"Amit Trivedi, Swanand Kirkire",
         src:"assets/songs/Monta Re - Lootera 320 Kbps.mp3",
         cover:"assets/images/montare.jfif"
     },
     {
-        title:"तुम ही आना",
-        artist:"जुबिन नौटियाल",
+        title:"Tum Hi Aana",
+        artist:"Jubin Nautiyal",
         src:"assets/songs/Tum Hi Aana - Marjaavaan.mp3",
         cover:"assets/images/tum hi ana.jfif"
     },
     {
-        title:"दास्तान-ए-ओम शांति ओम ",
-        artist:"शान",
+        title:"Daastaan-E-Om Shanti Om ",
+        artist:"Shaan",
         src:"assets/songs/Dastaan E Om Shanti Om Shaan 128 Kbps.mp3",
         cover:"assets/images/deom.jfif"
     },
     {
-        title:"जीने लगा हूँ",
-        artist:"सचिन-जिगर, श्रेया घोषाल, आतिफ असलम",
+        title:"Jenne Laga Hoon",
+        artist:"Sachin-Jigar, Shreya Ghoshal, Atif Aslam",
         src:"assets/songs/Jeene Laga hoo.mp3",
         cover:"assets/images/jeene laga.jfif"
     },
     {
-        title:"मेरी जिंदगी है तू",
-        artist:"जुबिन नौटियाल, नीति मोहन",
+        title:"Meri Zindagi Hai Tu",
+        artist:"Jubin Nautiyal, Neeti Mohan",
         src:"assets/songs/Meri Zindagi.mp3",
         cover:"assets/images/meri zindagi.jfif"
     },
     {
-        title:"तेरी आंखों",
-        artist:"गीर्षति सक्सेना",
+        title:"Teri Aankhon",
+        artist:"Geershati Saxena",
         src:"assets/songs/Teri Aankho.mp3",
         cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
     },
     {
-        title:"दीवानगी दीवानगी",
-        artist:"राहुल सक्सैना, शान, श्रेया घोषाल, सुनिधि चौहान, उदित नारायण",
+        title:"Deewangi Deewangi",
+        artist:"Rahul Saxena, Shaan, Shreya Ghoshal, Sunidhi Chauhan, Udit Narayan",
         src:"assets/songs/Deewangi Deewangi Om Shanti Om 128 Kbps.mp3",
         cover:"assets/images/osho.jfif"
     },
     {
-        title:"कैसा ये इस्क है, अजब सा रिस्क है",
-        artist:"राहत फतेह अली खान ",
+        title:"Kaisa Ye Ishq Hai, Ajab Sa Risk Hai",
+        artist:"Rahat Fateh Ali Khan",
         src:"assets/songs/Isq Risk-(Mr-Jat.in).mp3",
         cover:"assets/images/ishq risk.jfif"
     },
     {
-        title:"तुम्हारे बिना 2",
-        artist:"कुमार विश्वास , गीर्षति सक्सेना",
+        title:"Tumhare Bina 2",
+        artist:"Kumar Vishwas, Geershati Saxena",
         src:"assets/songs/Tumhare Bina.mp3",
         cover:"assets/images/kv.jfif"
     },
     {
-        title:"तुम्हारे बिना 3",
-        artist:"कुमार विश्वास , गीर्षति सक्सेना",
+        title:"Tumahre Bina 3",
+        artist:"Kumar Vishwas, Geershati Saxena",
         src:"assets/songs/Tumahre Bina 2.mp3",
         cover:"assets/images/kv.jfif"
     },
     {
-        title:"सामी सामी",
-        artist:"सुनिधि चौहान",
+        title:"Saami Saami",
+        artist:"Sunidhi Chauhan",
         src:"assets/songs/Saami Saami(PagalWorld.com.se).mp3",
         cover:"assets/images/saami.jfif"
     },
     {
-        title:"तेरी आंखों - 2",
-        artist:"गीर्षति सक्सेना",
+        title:"Teri Ankho 2",
+        artist:"Geershati Saxena",
         src:"assets/songs/Teri Ankho 2.mp3",
         cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
     }
