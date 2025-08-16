@@ -213,6 +213,12 @@ const songs = [
         cover:"assets/images/deom.jfif"
     },
     {
+        title:"Shape of You",
+        artist:"Ed Sheeran",
+        src:"assets/songs/Ed_Sheeran_-_Shape_of_You_Offblogmedia.com.mp3",
+        cover:"assets/images/ed sheeran.jfif"
+    },
+    {
         title:"Jenne Laga Hoon",
         artist:"Sachin-Jigar, Shreya Ghoshal, Atif Aslam",
         src:"assets/songs/Jeene Laga hoo.mp3",
@@ -224,6 +230,19 @@ const songs = [
         src:"assets/songs/Meri Zindagi.mp3",
         cover:"assets/images/meri zindagi.jfif"
     },
+    {
+        title:"G.O.A.T",
+        artist:"Diljit Dosanjh",
+        src:"assets/songs/G.O.A.T - Diljit Dosanjh.mp3",
+        cover:"assets/images/dd.jfif"
+    },
+    {
+        title:"Perfect",
+        artist:"Ed Sheeran",
+        src:"assets/songs/Perfect-(Mr-Jat.in).mp3",
+        cover:"assets/images/ed sheeran.jfif"
+    },
+   
     {
         title:"Teri Aankhon",
         artist:"Geershati Saxena",
@@ -241,6 +260,12 @@ const songs = [
         artist:"Rahat Fateh Ali Khan",
         src:"assets/songs/Isq Risk-(Mr-Jat.in).mp3",
         cover:"assets/images/ishq risk.jfif"
+    },
+     {
+        title:"Born to Shine",
+        artist:"Diljit Dosanjh",
+        src:"assets/songs/Born To Shine - Diljit Dosanjh.mp3",
+        cover:"assets/images/dd.jfif"
     },
     {
         title:"Tumhare Bina 2",
