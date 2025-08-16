@@ -57,6 +57,18 @@ const songs = [
         cover:"assets/images/ChatGPT Image Aug 13, 2025, 01_35_45 PM.png"
     },
     {
+        title:"Hare Krishna Hare Ram",
+        artist:"Jubin Nautiyal",
+        src:"assets/songs/Hare Krishna Hare Rama-(Mr-Jat.in).mp3",
+        cover:"assets/images/krishn.jfif"
+    },
+     {
+        title:"Shri Krishna Govind Hare Murari",
+        artist:"Jubin Nautiyal",
+        src:"assets/songs/Shri Krishna Govind Hare Murari Jubin Nautiyal 128 Kbps.mp3",
+        cover:"assets/images/krishn.jfif"
+    },
+    {
         title:"Tumhare Bina",
         artist:"Kumar Vishwas, Geershati Saxena",
         src:"assets/songs/ज़िन्दगी से लड़ा हूँ तुम्हारे बिना, हाशि.mp3",
