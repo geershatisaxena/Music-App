@@ -1,8 +1,9 @@
 <!DO    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="A modern, responsive music player application">
     <meta name="theme-color" content="#282c34">
-    <title>Melodia –  | the melody in every moment.</title>
+    <title>GeerVibes–  | the melody in every moment.</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_new.css">
     <link rel="stylesheet" href="css/auth.css">
     <link rel="stylesheet" href="css/responsive.css">html>
 <html lang="en">
@@ -67,6 +68,18 @@
                     <i class="fas fa-redo"></i>
                 </button>
             </div>
+            
+            <div class="progress-section">
+                <span id="current-time">0:00</span>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                    <div class="progress-handle"></div>
+                    <div class="progress-buffer"></div>
+                    <div class="progress-hover"></div>
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+
             <div class="volume-control">
                 <i class="fas fa-volume-up" id="volume-icon"></i>
                 <input type="range" id="volume-slider" min="0" max="100" value="100">
@@ -87,45 +100,19 @@
         
         <div class="music-visualizer">
             <canvas id="visualizer"></canvas>
+            ``
             <div class="dance-floor">
-                <div class="dancing-character character-1">
-                    <div class="character">
-                        <div class="head"></div>
-                        <div class="body"></div>
-                        <div class="arm left"></div>
-                        <div class="arm right"></div>
-                        <div class="leg left"></div>
-                        <div class="leg right"></div>
-                    </div>
+                
                 </div>
-                <div class="dancing-character character-2">
-                    <div class="character">
-                        <div class="head"></div>
-                        <div class="body"></div>
-                        <div class="arm left"></div>
-                        <div class="arm right"></div>
-                        <div class="leg left"></div>
-                        <div class="leg right"></div>
-                    </div>
+                
                 </div>
                 <div class="dancing-character character-3">
-                    <div class="character">
-                        <div class="head"></div>
-                        <div class="body"></div>
-                        <div class="arm left"></div>
-                        <div class="arm right"></div>
-                        <div class="leg left"></div>
-                        <div class="leg right"></div>
+                   
                     </div>
                 </div>
                 <div class="dancing-character character-4">
-                    <div class="character">
-                        <div class="head"></div>
-                        <div class="body"></div>
-                        <div class="arm left"></div>
-                        <div class="arm right"></div>
-                        <div class="leg left"></div>
-                        <div class="leg right"></div>
+                    
+                        
                     </div>
                 </div>
             </div>
@@ -149,17 +136,6 @@
             </div>
             <div id="song-grid" class="song-grid"></div>
         </div>
-    </div>
-
-    <div class="player-progress">
-        <span id="current-time">0:00</span>
-        <div class="progress-container">
-            <div class="progress"></div>
-            <div class="progress-handle"></div>
-            <div class="progress-buffer"></div>
-            <div class="progress-hover"></div>
-        </div>
-        <span id="duration">0:00</span>
     </div>
 
     <div class="music-notes">

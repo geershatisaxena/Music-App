@@ -24,17 +24,17 @@ html {
 
 :root {
     /* Core Colors */
-    --primary-color: #6c5ce7;
-    --secondary-color: #a29bfe;
-    --accent-color: #00cec9;
+    --primary-color: #4a90e2;
+    --secondary-color: #50c878;
+    --accent-color: #ff69b4;
     
     /* Light Theme */
-    --background-color: #f0f2f5;
-    --container-bg: #ffffff;
+    --background-color: #ffffff;
+    --container-bg: #fdffff;
     --text-color: #2d3436;
     --text-color-strong: #1a1a1a;
-    --title-gradient: linear-gradient(135deg, #6c5ce7, #4834d4);
-    --secondary-text: #636e72;
+    --title-gradient: linear-gradient(135deg, #ff0101, #dde110);
+    --secondary-text: #f70c6a;
     --border-color: #dfe6e9;
     --hover-color: #f1f2f6;
     
@@ -44,10 +44,14 @@ html {
     --shadow-lg: 0 8px 16px rgba(108, 92, 231, 0.2);
     
     /* Gradients */
-    --gr.player-progress {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    --gr.progress-section {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 1.5rem 0;
     right: 0;
     background: var(--container-bg);
     padding: 15px 30px;
@@ -68,12 +72,13 @@ html {
 
 .progress-container {
     flex: 1;
-    background: var(--hover-color);
+    background: #e0e0e0;
     border-radius: 10px;
     cursor: pointer;
     height: 6px;
     position: relative;
     transition: var(--transition-fast);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .progress-container:hover {
@@ -85,12 +90,13 @@ html {
 }
 
 .progress {
-    background: var(--gradient-primary);
+    background: linear-gradient(90deg, #ff0101, #f70c6a);
     border-radius: 10px;
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
     position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .progress-handle {
@@ -129,7 +135,7 @@ html {
     --background-color: #1a1b1e;
     --container-bg: #2d2e32;
     --text-color: #f1f2f6;
-    --text-color-strong: #ffffff;
+    --text-color-strong: #1a0000;
     --title-gradient: linear-gradient(135deg, #a29bfe, #6c5ce7);
     --secondary-text: #a4b0be;
     --border-color: #3d3e42;
@@ -144,10 +150,19 @@ html {
     --container-bg: #2d2e32;
     --text-color: #f1f2f6;
     --text-color-strong: #ffffff;
-    --title-gradient: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    --primary-color: #66b6ff;
+    --secondary-color: #72e698;
+    --accent-color: #ff8ac4;
+    --title-gradient: linear-gradient(135deg, #66b6ff, #72e698);
     --secondary-text: #a4b0be;
     --border-color: #3d3e42;
     --hover-color: #34353a;
+}
+
+[data-theme="dark"] .progress-container {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
     
     /* Dark Theme Specific */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -155,7 +170,7 @@ html {
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.4);
     
     /* Dark Theme Gradients */
-    --gradient-primary: linear-gradient(135deg, #6c5ce7, #4834d4);
+    --gradient-primary: linear-gradient(135deg, #f62008, #f5770a);
     --gradient-accent: linear-gradient(135deg, #00cec9, #00b894);
 }
 
@@ -203,8 +218,62 @@ body {
     gap: 0.8rem;
     font-size: 1.5rem;
     font-weight: var(--font-weight-semibold);
-    color: var(--text-color-strong);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo i {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    animation: pulse-icon 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 8px var(--primary-color));
+}
+
+.logo span {
+    background: linear-gradient(45deg, 
+        #4a90e2, /* Royal Blue */
+        #50c878, /* Emerald */
+        #ff69b4, /* Hot Pink */
+        #4a90e2  /* Royal Blue again for smooth loop */
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-text 8s linear infinite;
+    position: relative;
+    display: inline-block;
+}
+
+.logo span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent,
+        var(--primary-color),
+        transparent
+    );
+    animation: slide-line 3s ease-in-out infinite;
+}
+
+@keyframes animate-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse-icon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); filter: hue-rotate(45deg); }
+}
+
+@keyframes slide-line {
+    0% { transform: translateX(-100%); opacity: 0; }
+    50% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(100%); opacity: 0; }
 }
 
 .controls {
@@ -311,7 +380,7 @@ body {
 
 /* Character 1 - Purple Dancer (Hip Hop) */
 .character-1 {
-    color: #a29bfe;
+    color: #1a0202;
 }
 
 .character-1 .character {
@@ -691,11 +760,16 @@ body {
 
 .playlist-header h3 {
     font-size: 1.5rem;
-    font-weight: var(--font-weight-semibold);
-    background: var(--gradient-primary);
+    font-weight: 600;
+    color: #2d3436;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #ff0101, #e71818, #f70c6a);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 0.2rem 0;
 }
 
 .view-controls {
