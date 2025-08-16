@@ -141,6 +141,12 @@ const songs = [
         cover: "assets/images/ct.jfif"
     },
     {
+        title: "Tumse Milke Dil Ka Hai Jo Haal",
+        artist: "Annu Mallik, Sonu Nigam, Altaf Sabri, Sabri Brothers",
+        src: "assets/songs/Tumse Milke Dilka Jo Haal(KoshalWorld.Com).mp3",
+        cover: "assets/images/mhn.jfif"
+    },
+    {
         title: "Aasman Rootha Panchayat Season 3",
         artist: "Swanand Kirkire",
         src: "assets/songs/Aasman Rootha Panchayat Season 3 128 Kbps.mp3",
